@@ -1,0 +1,31 @@
+# Run with `dart run ffigen --config ffigen.yaml`.
+name: ORSSerialPortBindings
+description: |
+  Bindings for ORSSerialPort
+
+  Regenerate bindings with `dart run ffigen --config ffigen.yaml`.
+output:
+  bindings: 'lib/src/ors_serial_bindings_generated.dart'
+  objc-bindings: 'macos/classes/native_orsserial_bindings.m'
+language: objc
+headers:
+  entry-points:
+    - 'example/macos/Pods/ORSSerialPort/Source/ORSSerialPort.h'
+    - 'example/macos/Pods/ORSSerialPort/Source/ORSSerialPacketDescriptor.h'
+    - 'example/macos/Pods/ORSSerialPort/Source/ORSSerialPortManager.h'
+preamble: |
+  // ignore_for_file: always_specify_types
+  // ignore_for_file: camel_case_types
+  // ignore_for_file: non_constant_identifier_names
+comments:
+  style: any
+  length: full
+exclude-all-by-default: true
+objc-protocols:
+  include:
+    - ORSSerialPortDelegate
+objc-interfaces:
+  include:
+    - ORSSerialPort
+    - ORSSerialPortManager
+    - ORSSerialPacketDescriptor

@@ -1,0 +1,29 @@
+PODS:
+  - FlutterMacOS (1.0.0)
+  - ors_serial (0.0.1):
+    - FlutterMacOS
+    - ORSSerialPort
+  - ORSSerialPort (2.1)
+
+DEPENDENCIES:
+  - FlutterMacOS (from `Flutter/ephemeral`)
+  - ors_serial (from `Flutter/ephemeral/.symlinks/plugins/ors_serial/macos`)
+
+SPEC REPOS:
+  trunk:
+    - ORSSerialPort
+
+EXTERNAL SOURCES:
+  FlutterMacOS:
+    :path: Flutter/ephemeral
+  ors_serial:
+    :path: Flutter/ephemeral/.symlinks/plugins/ors_serial/macos
+
+SPEC CHECKSUMS:
+  FlutterMacOS: d0db08ddef1a9af05a5ec4b724367152bb0500b1
+  ors_serial: fe93ce51c402a2210654e296c8af5ca7b2c9df03
+  ORSSerialPort: d2d5d131797453430c557ba8dc7dcbcae20ff2e5
+
+PODFILE CHECKSUM: 54d867c82ac51cbd61b565781b9fada492027009
+
+COCOAPODS: 1.15.2
